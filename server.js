@@ -8,6 +8,8 @@ const express = require('express');
 //creating a route that the front-end can request data from 
 const { animals } = require('./data/animals');
 
+const PORT = process.env.PORT || 3001;
+
 //server will only function to take fetched data and display it to client
 
 //TO DO: SET UP SERVER --> 1) Initialize the server
@@ -32,7 +34,7 @@ app.get('/data/animals', (req, res) => {
 // 2) Listen for requests 
 
 // using listen() method to make server listen 
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log(`API server now on port 3001!`);
 })
 
