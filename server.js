@@ -72,4 +72,4 @@ function filterByQuery(query, animalsArray) {
       filteredResults = filteredResults.filter(animal => animal.name === query.name);
     }
     return filteredResults;
-  }
+}
