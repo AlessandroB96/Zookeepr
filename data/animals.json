@@ -117,6 +117,60 @@
         "hungry"
       ],
       "id": "11"
+    },
+    {
+      "name": "Charlie",
+      "species": "parrot",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "loving"
+      ],
+      "id": "12"
+    },
+    {
+      "name": "Charlie",
+      "species": "parrot",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "loving"
+      ],
+      "id": "13"
+    },
+    {
+      "name": "Charlie",
+      "species": "parrot",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "loving"
+      ],
+      "id": "14"
+    },
+    {
+      "name": "Charlie",
+      "species": "parrot",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "loving"
+      ],
+      "id": "15"
+    },
+    {
+      "name": "Charlie",
+      "species": "parrot",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "loving"
+      ],
+      "id": "16"
+    },
+    {
+      "name": "hugo",
+      "species": "hamster",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "goofy"
+      ],
+      "id": "17"
     }
   ]
 }

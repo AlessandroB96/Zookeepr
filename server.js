@@ -10,7 +10,7 @@ const express = require('express');
 
 //creating a route that the front-end can request data from 
 const { animals } = require('./data/animals');
-const e = require('express');
+
 
 const PORT = process.env.PORT || 3001;
 
@@ -33,6 +33,26 @@ app.use(express.urlencoded({ extended: true }));
 //takes incoming POST data in the form of JSON and parses it into req.body js object
 app.use(express.json());
 
+//express.static method will provide a file path to a location in our application, aka the public folder. This method makes these files static resources 
+app.use(express.static('public'));
+
+// '/' brings us to the root route of the server 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+app.get('/animals', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+app.get('/zookeepers', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+});
+
+//case where a user enters a nonexistant url path. * is a wildcard that will redirect user to the homepage
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
 
 // 2) Listen for requests 
 
